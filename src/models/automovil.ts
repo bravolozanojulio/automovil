@@ -1,20 +1,18 @@
 export class auto{
     private _marca: string
     private _modelo: string
-    private _motor: string
-    private _combus: number
-    private _km: number
-    private _potencia: number
+    private _distancia: number
+    private _deposito: number
+    private _consumo
     private _vel:number
   
-    constructor(marca:string,modelo:string,motor:string,km:number,combus:number,potencia:number,vel:number){
-        this._marca = marca
-        this._modelo = modelo
-        this._motor= motor
-        this._combus= combus
-        this._km = km
-        this._potencia= potencia
-        this._vel = vel
+    constructor(marca:string,modelo:string,distancia:number,deposito:number,consumo:number,vel:number){
+        this._marca= marca
+        this._modelo= modelo
+        this._distancia= distancia
+        this._deposito= deposito
+        this._consumo= consumo
+        this._vel= vel
     }
     
     get Marca (){
@@ -25,21 +23,18 @@ export class auto{
         return this._modelo
     }
 
-    get Motor (){
-        return this._motor
+    get Consumo (){
+        return this._consumo
     }
 
-    get Combus (){
-        return this._combus
+    get Distancia (){
+        return this._distancia
     }
 
-    get Km(){
-        return this._km
+    get Deposito (){
+        return this._deposito
     }
 
-    get Potencia (){
-        return this._potencia
-    }
     get Velocidad(){
         return this._vel
     }
