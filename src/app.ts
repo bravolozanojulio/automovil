@@ -43,8 +43,8 @@ const main = async () => {
                             modelo= (await leerTeclado('\n Introduzca el modelo de su coche'))
                             deposito= parseInt(await leerTeclado('\n Introduzca la cantidad de combustible disponible'))
                             vel= parseInt(await leerTeclado('\n Introduzca la velocidad media'))
-                            time= parseInt(await leerTeclado('\n Introduzca el tiempo de conduccion'))
-                            consumo= parseInt(await leerTeclado('\n Introduzca consumo medio 100 km/l (ver ficha tecnica)'))
+                            time= parseFloat(await leerTeclado('\n Introduzca el tiempo de conduccion'))
+                            consumo= parseFloat(await leerTeclado('\n Introduzca consumo medio 100 km/l (ver ficha tecnica)'))
                             estado=true
 
                             v1= new auto(marca,modelo,deposito,vel,time,consumo)
@@ -74,7 +74,7 @@ const main = async () => {
                                         break
                                     case 5:
                                         console.log(`\n Su periodo de conducción es  ${v1.Time} horas`)
-                                        time =parseInt(await leerTeclado('\n Introduzca el nuevo periodo de tiempo'))
+                                        time =parseFloat(await leerTeclado('\n Introduzca el nuevo periodo de tiempo'))
                                         v1.Ctime= time
                                         break
                                     case 0:
@@ -95,10 +95,10 @@ const main = async () => {
 
                             marca2= (await leerTeclado('\n Introduzca la marca de su coche'))
                             modelo2= (await leerTeclado('\n Introduzca el modelo de su coche'))
-                            deposito2= parseInt(await leerTeclado('\n Introduzca la cantidad de combustible disponible'))
+                            deposito2= parseFloat(await leerTeclado('\n Introduzca la cantidad de combustible disponible'))
                             vel2= parseInt(await leerTeclado('\n Introduzca la velocidad media'))
-                            time2= parseInt(await leerTeclado('\n Introduzca el tiempo de conduccion'))
-                            consumo2= parseInt(await leerTeclado('\n Introduzca consumo medio 100 km/l (ver ficha tecnica)'))
+                            time2= parseFloat(await leerTeclado('\n Introduzca el tiempo de conduccion'))
+                            consumo2= parseFloat(await leerTeclado('\n Introduzca consumo medio 100 km/l (ver ficha tecnica)'))
                             estado2=false
 
                             v2= new auto(marca2,modelo2,deposito2,vel2,time2,consumo2)
@@ -128,7 +128,7 @@ const main = async () => {
                                           break
                                       case 5:
                                           console.log(`\n Su periodo de conducción es  ${v2.Time}`)
-                                          time2 =parseInt(await leerTeclado('\n Introduzca el nuevo periodo de tiempo'))
+                                          time2 =parseFloat(await leerTeclado('\n Introduzca el nuevo periodo de tiempo'))
                                           v2.Ctime= time2
                                           break
                                       case 0:
