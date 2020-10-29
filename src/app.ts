@@ -166,7 +166,7 @@ const main = async () => {
                             console.log(`Dispone de ${v2.Deposito} l de combustible`)
                             console.log(`El consumo de su auto es de ${v2.Consumo} l/100 km`)
                             console.log(`La velocidad a la que circula es de ${v2.Vel} Km/h`)
-                            console.log(`Su tiempo de conduccion esta previsto para ${v2.Time} horase`)
+                            console.log(`Su tiempo de conduccion esta previsto para ${v2.Time} horas`)
                         
 
                             let opcion4: number
